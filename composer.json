@@ -13,7 +13,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "tenowg\\evedata\\EveDataProvider"
+                "tenowg\\evedata\\src\\EveDataProvider"
             ]
         }
     }
