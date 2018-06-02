@@ -10,10 +10,15 @@
     ],
     "minimum-stability": "dev",
     "require": {},
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
     "extra": {
         "laravel": {
             "providers": [
-                "\\tenowg\\evedata\\EveDataProvider"
+                "tenowg\\evedata\\EveDataProvider"
             ]
         }
     }
