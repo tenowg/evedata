@@ -1,6 +1,7 @@
 {
     "name": "tenowg/evedata",
     "description": "Eve Data for Mysql",
+    "license": "MIT",
     "authors": [
         {
             "name": "Craig Russell",
