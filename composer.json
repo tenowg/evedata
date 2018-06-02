@@ -1,0 +1,19 @@
+{
+    "name": "tenowg/evedata",
+    "description": "Eve Data for Mysql",
+    "authors": [
+        {
+            "name": "Craig Russell",
+            "email": "tenowg@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "tenowg\\evedata\\EveDataProvider"
+            ]
+        }
+    }
+}
