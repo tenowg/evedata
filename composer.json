@@ -12,7 +12,8 @@
     "require": {},
     "autoload": {
         "classmap": [
-            "src/"
+            "src/",
+            "src/data"
         ]
     },
     "extra": {
