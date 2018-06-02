@@ -1,6 +1,6 @@
 <?php
 
-namespace tenowg\evedata\data;
+namespace EveData;
 
 use Illuminate\Database\Eloquent\Model;
 

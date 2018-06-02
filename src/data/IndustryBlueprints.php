@@ -1,32 +1,31 @@
 <?php
 
-namespace tenowg\evedata\data;
+namespace EveData;
 
 use Illuminate\Database\Eloquent\Model;
-use tenowg\evedata\data\ReadOnly;
+use EveData\ReadOnly;
 
 class IndustryBlueprints extends ReadOnly
 {
-    protected $connection = "mysql_eve";
     protected $table = "industryblueprints";
     protected $primaryKey = "typeID";
 
     public function type()
     {
-        return $this->hasOne('tenowg\evedata\data\InvTypes', 'typeID', 'typeID');
+        return $this->hasOne('EveData\InvTypes', 'typeID', 'typeID');
     }
 
     public function activities()
     {
-        return $this->hasMany('tenowg\evedata\data\IndustryActivity', 'typeID', 'typeID');
+        return $this->hasMany('EveData\IndustryActivity', 'typeID', 'typeID');
     }
 
     public function materials()
     {
-        return $this->hasMany('tenowg\evedata\data\IndustryActivityMaterials', 'typeID', 'typeID');
+        return $this->hasMany('EveData\IndustryActivityMaterials', 'typeID', 'typeID');
     }
 
     public function products() {
-        return $this->hasOne('tenowg\evedata\data\IndustryActivityProducts', 'typeID', 'typeID');
+        return $this->hasOne('EveData\IndustryActivityProducts', 'typeID', 'typeID');
     }
 }

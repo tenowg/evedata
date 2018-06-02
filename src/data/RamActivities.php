@@ -1,13 +1,12 @@
 <?php
 
-namespace tenowg\evedata\data;
+namespace EveData;
 
 use Illuminate\Database\Eloquent\Model;
-use tenowg\evedata\data\ReadOnly;
+use EveData\ReadOnly;
 
 class RamActivities extends ReadOnly
 {
-    protected $connection = "mysql_eve";
     protected $table = "ramactivities";
     protected $primaryKey = "activityID";
 }

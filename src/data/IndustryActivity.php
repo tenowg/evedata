@@ -1,18 +1,17 @@
 <?php
 
-namespace tenowg\evedata\data;
+namespace EveData;
 
 use Illuminate\Database\Eloquent\Model;
-use tenowg\evedata\data\ReadOnly;
+use EveData\ReadOnly;
 
 class IndustryActivity extends ReadOnly
 {
-    protected $connection = "mysql_eve";
     protected $table = "industryactivity";
     protected $primaryKey = "activityID";
 
     public function type()
     {
-        return $this->hasOne('tenowg\evedata\data\InvTypes', 'typeID', 'typeID');
+        return $this->hasOne('EveData\InvTypes', 'typeID', 'typeID');
     }
 }

@@ -1,9 +1,9 @@
 <?php
 
-// namespace tenowg\evedata\data;
+namespace EveData;
 
 use Illuminate\Database\Eloquent\Model;
-use tenowg\evedata\data\ReadOnly;
+use EveData\ReadOnly;
 
 class InvTypes extends ReadOnly
 {
@@ -12,6 +12,6 @@ class InvTypes extends ReadOnly
 
     public function group()
     {
-        return $this->hasOne('tenowg\evedata\data\InvGroups', 'groupID', 'groupID');
+        return $this->hasOne('EveData\InvGroups', 'groupID', 'groupID');
     }
 }

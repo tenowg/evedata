@@ -1,21 +1,20 @@
 <?php
 
-namespace tenowg\evedata\data;
+namespace EveData;
 
 use Illuminate\Database\Eloquent\Model;
-use tenowg\evedata\data\ReadOnly;
+use EveData\ReadOnly;
 
 class IndustryActivityMaterials extends ReadOnly
 {
-    protected $connection = "mysql_eve";
     protected $table = "industryactivitymaterials";
     protected $primaryKey = null;
 
     public function bpo() {
-        return $this->hasOne('tenowg\evedata\data\IndustryActivityProducts', 'productTypeID', 'materialTypeID');
+        return $this->hasOne('EveData\IndustryActivityProducts', 'productTypeID', 'materialTypeID');
     }
 
     public function type() {
-        return $this->hasOne('tenowg\evedata\data\InvTypes', 'typeID', 'materialTypeID');
+        return $this->hasOne('EveData\InvTypes', 'typeID', 'materialTypeID');
     }
 }
