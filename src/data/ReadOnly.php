@@ -4,6 +4,11 @@ namespace EveData;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * EveData\ReadOnly
+ *
+ * @mixin \Eloquent
+ */
 class ReadOnly extends Model
 {
     /**
