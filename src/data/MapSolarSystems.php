@@ -10,6 +10,6 @@ class MapSolarSystems extends ReadOnly
     protected $primaryKey = 'solarSystemID';
 
     public function region() {
-        $this->hasOne('EveData\MapRegions', 'regionID', 'regionID');
+        return $this->hasOne('EveData\MapRegions', 'regionID', 'regionID');
     }
 }
