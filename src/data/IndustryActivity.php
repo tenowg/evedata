@@ -2,7 +2,6 @@
 
 namespace EveData;
 
-use Illuminate\Database\Eloquent\Model;
 use EveData\ReadOnly;
 
 class IndustryActivity extends ReadOnly
