@@ -70,4 +70,8 @@ class MapSolarSystems extends ReadOnly
     public function region() {
         return $this->hasOne('EveData\MapRegions', 'regionID', 'regionID');
     }
+
+    public function constellation_info() {
+        return $this->hasOne('EveData\MapConstellations', 'constellationID', 'constellationID');
+    }
 }
