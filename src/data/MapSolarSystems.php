@@ -61,6 +61,7 @@ use EveData\ReadOnly;
  * @method static \Illuminate\Database\Eloquent\Builder|\EveData\MapSolarSystems whereZMax($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\EveData\MapSolarSystems whereZMin($value)
  * @mixin \Eloquent
+ * @property-read \EveData\MapConstellations $constellation_info
  */
 class MapSolarSystems extends ReadOnly
 {

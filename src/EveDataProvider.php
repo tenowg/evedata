@@ -25,6 +25,6 @@ class EveDataProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom( __DIR__.'/config/evedata.php', 'evedata');
+        $this->mergeConfigFrom( __DIR__.'/config/evedata.php', 'evedata'); 
     }
 }
