@@ -39,6 +39,8 @@ use EveData\ReadOnly;
  * @method static \Illuminate\Database\Eloquent\Builder|\EveData\InvTypes whereTypeName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\EveData\InvTypes whereVolume($value)
  * @mixin \Eloquent
+ * @property-read \EveData\InvMetaTypes $metaType
+ * @property-read \Illuminate\Database\Eloquent\Collection|\EveData\InvMetaTypes[] $typeVariants
  */
 class InvTypes extends ReadOnly
 {
@@ -48,5 +50,13 @@ class InvTypes extends ReadOnly
     public function group()
     {
         return $this->hasOne('EveData\InvGroups', 'groupID', 'groupID');
+    }
+
+    public function metaType() {
+        return $this->hasOne('EveData\InvMetaTypes', 'typeID', 'typeID');
+    }
+
+    public function typeVariants() {
+        return $this->hasMany('EveData\InvMetaTypes', 'parentTypeID', 'typeID');
     }
 }
