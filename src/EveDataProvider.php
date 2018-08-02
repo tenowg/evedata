@@ -13,7 +13,7 @@ class EveDataProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsaFrom(__DIR__.'/views', 'evedata');
+        $this->loadViewsFrom(__DIR__.'/views', 'evedata');
         $this->publishes([
             __DIR__."/config/evedata.php" => config_path('evedata.php'),
             __DIR__."/views" => resource_path('views/vendor/evedata'),
