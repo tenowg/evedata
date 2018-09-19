@@ -20,7 +20,7 @@ use EveData\ReadOnly;
  */
 class IndustryActivityProducts extends ReadOnly
 {
-    protected $table = "industryactivityproducts";
+    protected $table = "industryActivityProducts";
     protected $primaryKey = null;
 
     public function type()

@@ -21,7 +21,7 @@ use EveData\ReadOnly;
  */
 class IndustryActivityMaterials extends ReadOnly
 {
-    protected $table = "industryactivitymaterials";
+    protected $table = "industryActivityMaterials";
     protected $primaryKey = null;
 
     public function bpo() {

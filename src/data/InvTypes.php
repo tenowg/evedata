@@ -44,7 +44,7 @@ use EveData\ReadOnly;
  */
 class InvTypes extends ReadOnly
 {
-    protected $table = "invtypes";
+    protected $table = "invTypes";
     protected $primaryKey = "typeID";
 
     public function group()

@@ -19,6 +19,6 @@ use EveData\ReadOnly;
  */
 class InvCategories extends ReadOnly
 {
-    protected $table = "invcategories";
+    protected $table = "invCategories";
     protected $primaryKey = "categoryID";
 }

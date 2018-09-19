@@ -19,6 +19,6 @@ use EveData\ReadOnly;
  */
 class InvMetaGroups extends ReadOnly
 {
-    protected $table = "invmetagroups";
+    protected $table = "invMetaGroups";
     protected $primaryKey = "metaGroupID";
 }

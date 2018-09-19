@@ -39,6 +39,6 @@ use EveData\ReadOnly;
  */
 class MapConstellations extends ReadOnly
 {
-    protected $table = 'mapconstellations';
+    protected $table = 'mapConstellations';
     protected $primaryKey = 'constellationID';
 }

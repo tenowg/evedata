@@ -20,7 +20,7 @@ use EveData\ReadOnly;
  */
 class InvMetaTypes extends ReadOnly
 {
-    protected $table = "invmetatypes";
+    protected $table = "invMetaTypes";
     protected $primaryKey = "typeID";
 
     public function metaGroup() {

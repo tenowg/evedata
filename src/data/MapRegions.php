@@ -37,6 +37,6 @@ use EveData\ReadOnly;
  */
 class MapRegions extends ReadOnly
 {
-    protected $table = 'mapregions';
+    protected $table = 'mapRegions';
     protected $primaryKey = 'regionID';
 }

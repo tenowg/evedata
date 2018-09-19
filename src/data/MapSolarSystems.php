@@ -65,7 +65,7 @@ use EveData\ReadOnly;
  */
 class MapSolarSystems extends ReadOnly
 {
-    protected $table = 'mapsolarsystems';
+    protected $table = 'mapSolarSystems';
     protected $primaryKey = 'solarSystemID';
 
     public function region() {
